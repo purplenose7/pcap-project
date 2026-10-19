@@ -9,9 +9,7 @@ Exit code 0 = all passed, 1 = at least one failure (details printed).
 """
 import argparse, itertools, sys
 from pathlib import Path
-
 import numpy as np
-
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from navya.common import Backend                                  # noqa: E402
 from navya.kernels import sad_ref, sad_strided_ref                # noqa: E402
